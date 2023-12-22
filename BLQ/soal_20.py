@@ -26,7 +26,6 @@ def suit_game(jarak_awal, suit_a, suit_b):
     else:
         return "B"
 
-# Contoh penggunaan:
 jarak_awal = 2
 suit_a = "GGG"
 suit_b = "KKB"
