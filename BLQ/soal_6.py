@@ -5,7 +5,6 @@ def is_palindrome(kata):
     # Memeriksa apakah kata sama dengan kata yang dibalik
     return kata == kata[::-1]
 
-# Contoh penggunaan:
 kata_input = input("Masukkan sebuah kata: ")
 if is_palindrome(kata_input):
     print(f"{kata_input} adalah sebuah palindrome.")

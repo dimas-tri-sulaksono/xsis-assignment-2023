@@ -9,8 +9,11 @@ def max_items_dibeli(uang, daftar_barang):
     max_items = dp[uang]
     return max_items
 
-# Contoh penggunaan:
-uang_andi = 1000
+# Contoh:
+# uang_andi = 1000
+
+uang_andi = int(input("Masukkan jumlah uang Andi: "))
+
 daftar_barang_andi = [
     {'nama': 'Kaca_mata', 'harga': [500, 600, 700, 800]},
     {'nama': 'Baju', 'harga': [200, 400, 350]},

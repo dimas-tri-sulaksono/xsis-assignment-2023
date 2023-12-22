@@ -14,14 +14,13 @@ def nilai_minimal_maksimal_deret(deret_angka):
 
     return minimal, maksimal
 
-# Contoh penggunaan:
 deret_angka_input = input("Masukkan deret angka (gunakan spasi sebagai pemisah): ")
 deret_angka = [int(angka) for angka in deret_angka_input.split()]
 
 hasil_minimal, hasil_maksimal = nilai_minimal_maksimal_deret(deret_angka)
 
 if hasil_minimal is not None:
-    print(f"Deret Angka (Setelah Diurutkan): {deret_angka}")
+    # print(f"Deret Angka (Setelah Diurutkan): {deret_angka}")
     print(f"Nilai Minimal dari Penjumlahan 4 Komponen: {hasil_minimal}")
     print(f"Nilai Maksimal dari Penjumlahan 4 Komponen: {hasil_maksimal}")
 else:

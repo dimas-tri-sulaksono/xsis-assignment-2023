@@ -18,7 +18,7 @@ def hitung_tarif_parkir(masuk, keluar):
     if selisih_jam <= 8:
         tarif = int(selisih_jam * tarif_per_jam)
 
-        #jika selisih waktu kurang dari 1 jam
+        # Jika selisih waktu kurang dari 1 jam
         if tarif < 1000: tarif = 1000
     
     elif 8 < selisih_jam <= 24:
@@ -33,12 +33,12 @@ def hitung_tarif_parkir(masuk, keluar):
     elif 8 < (selisih_jam % 24) <= 24:
         tarif = int(tarif_24_jam_8_jam_berikutnya * (selisih_jam // 24) + tarif_8_jam_pertama)
     
-    return tarif, selisih_waktu, asa, asd
+    return tarif, selisih_waktu
 
-# Contoh penggunaan:
+# Contoh:
 masuk_parkir = "27 Jan 2019 | 00:00:00"
-keluar_parkir = "29 Jan 2019 | 02:00:01"
+keluar_parkir = "28 Jan 2019 | 06:00:00"
 
-tarif, selisih_waktu, asa, asd = hitung_tarif_parkir(masuk_parkir, keluar_parkir)
+tarif, selisih_waktu = hitung_tarif_parkir(masuk_parkir, keluar_parkir)
 print(f"Selisih waktu: {selisih_waktu}")
 print(f"Tarif parkir: {tarif} IDR")
