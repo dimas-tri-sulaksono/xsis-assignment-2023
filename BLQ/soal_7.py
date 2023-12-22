@@ -19,8 +19,9 @@ def hitung_modus(deret_angka):
     modus.sort()
     return modus
 
-# Contoh penggunaan:
-deret_angka = [8, 7, 0, 2, 7, 1, 7, 6, 3, 0, 7, 1, 3, 4, 6, 1, 6, 4, 3]
+# Input deret angka dengan pemisah spasi
+deret_input = input("Masukkan deret angka (gunakan spasi sebagai pemisah): ")
+deret_angka = [int(angka) for angka in deret_input.split()]
 
 mean = hitung_mean(deret_angka)
 median = hitung_median(deret_angka)
