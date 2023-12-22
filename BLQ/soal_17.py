@@ -11,10 +11,10 @@ def hitung_gunung_lembah(urutan):
         elif langkah == 'T':
             ketinggian -= 1
 
-        # Cek jika Ashina sedang di puncak gunung
+        # Cek jika Hattori sedang di puncak gunung
         if ketinggian == 0 and langkah == 'N':
             jumlah_gunung += 1
-        # Cek jika Ashina sedang di dasar lembah
+        # Cek jika Hattori sedang di dasar lembah
         elif ketinggian == 0 and langkah == 'T':
             jumlah_lembah += 1
 
@@ -23,6 +23,5 @@ def hitung_gunung_lembah(urutan):
 urutan_langkah = "NNTNNNTTTTNNTTTNTN"
 jumlah_gunung, jumlah_lembah = hitung_gunung_lembah(urutan_langkah)
 
-print(f"Ashina telah melewati:")
 print(f"Jumlah Gunung: {jumlah_gunung}")
 print(f"Jumlah Lembah: {jumlah_lembah}")
