@@ -19,41 +19,19 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.tokopedia.tkpd', FailureHandling.STOP_ON_FAILURE)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('loginByGoogleNewDevice/btnLewati'), 0)
 
-Mobile.tap(findTestObject('tokopedia/productPurchase/01_CariDiTokopedia'), 0)
+Mobile.tap(findTestObject('loginByGoogleNewDevice/btnTutupPopUp'), 0)
 
-Mobile.setText(findTestObject('tokopedia/productPurchase/02_CariDiTokopedia'), 'Oxihom FK9', 5)
+Mobile.tap(findTestObject('loginByGoogleNewDevice/btnBurger'), 0)
 
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+Mobile.tap(findTestObject('loginByGoogleNewDevice/btnMasukMenuUtama'), 0)
 
-Mobile.tap(findTestObject('tokopedia/productPurchase/03_SearchList'), 0)
+Mobile.tap(findTestObject('loginByGoogleNewDevice/btnMetodeLain'), 0)
 
-Mobile.tap(findTestObject('tokopedia/productPurchase/04_Product'), 0)
+Mobile.tap(findTestObject('loginByGoogleNewDevice/btnGoogle'), 0)
 
-Mobile.tap(findTestObject('tokopedia/productPurchase/05_BeliLangsung'), 0)
-
-Mobile.tap(findTestObject('tokopedia/productPurchase/06_BeliLangsung'), 0)
-
-Mobile.tap(findTestObject('tokopedia/productPurchase/07_UbahMetodeBayar'), 0)
-
-Mobile.tap(findTestObject('tokopedia/productPurchase/x_KembaliDariHalamanMetodeBayar'), 0)
-
-Mobile.tap(findTestObject('tokopedia/productPurchase/07_UbahMetodeBayar'), 0)
-
-Mobile.tap(findTestObject('tokopedia/productPurchase/08_BCAVirtualAccount'), 0)
-
-Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
-
-//Aquos SH-04L
-//Mobile.swipe(708, 2951, 708, 1988)
-
-//Samsung A52s
-Mobile.swipe(526, 2152, 526, 700)
-
-Mobile.tap(findTestObject('tokopedia/productPurchase/09_Bayar'), 0)
-
-Mobile.tap(findTestObject('tokopedia/productPurchase/10_LihatCaraPembayaran'), 0)
+Mobile.tap(findTestObject('loginByGoogleNewDevice/btnAkunLinear'), 0)
 
 Mobile.closeApplication()
 

@@ -21,27 +21,27 @@ Mobile.startExistingApplication('com.tokopedia.tkpd', FailureHandling.STOP_ON_FA
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('tokopedia/productPurchase/01_CariDiTokopedia'), 0)
+Mobile.tap(findTestObject('productPurchase/01_CariDiTokopedia'), 0)
 
-Mobile.setText(findTestObject('tokopedia/productPurchase/02_CariDiTokopedia'), 'Oxihom FK9', 5)
+Mobile.setText(findTestObject('productPurchase/02_CariDiTokopedia'), 'Oxihom FK9', 5)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('tokopedia/productPurchase/03_SearchList'), 0)
+Mobile.tap(findTestObject('productPurchase/03_SearchList'), 0)
 
-Mobile.tap(findTestObject('tokopedia/productPurchase/04_Product'), 0)
+Mobile.tap(findTestObject('productPurchase/04_Product'), 0)
 
-Mobile.tap(findTestObject('tokopedia/productPurchase/05_BeliLangsung'), 0)
+Mobile.tap(findTestObject('productPurchase/05_BeliLangsung'), 0)
 
-Mobile.tap(findTestObject('tokopedia/productPurchase/06_BeliLangsung'), 0)
+Mobile.tap(findTestObject('productPurchase/06_BeliLangsung'), 0)
 
-Mobile.tap(findTestObject('tokopedia/productPurchase/07_UbahMetodeBayar'), 0)
+Mobile.tap(findTestObject('productPurchase/07_UbahMetodeBayar'), 0)
 
-Mobile.tap(findTestObject('tokopedia/productPurchase/x_KembaliDariHalamanMetodeBayar'), 0)
+Mobile.tap(findTestObject('productPurchase/x_KembaliDariHalamanMetodeBayar'), 0)
 
-Mobile.tap(findTestObject('tokopedia/productPurchase/07_UbahMetodeBayar'), 0)
+Mobile.tap(findTestObject('productPurchase/07_UbahMetodeBayar'), 0)
 
-Mobile.tap(findTestObject('tokopedia/productPurchase/08_Gopay'), 0)
+Mobile.tap(findTestObject('productPurchase/08_BCAVirtualAccount'), 0)
 
 Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
@@ -51,11 +51,9 @@ Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 //Samsung A52s
 Mobile.swipe(526, 2152, 526, 700)
 
-Mobile.tap(findTestObject('tokopedia/productPurchase/09_Bayar'), 0)
+Mobile.tap(findTestObject('productPurchase/09_Bayar'), 0)
 
-//belum ada step untuk input pin gopay
-
-Mobile.tap(findTestObject('tokopedia/productPurchase/10_LihatCaraPembayaran'), 0)
+Mobile.tap(findTestObject('productPurchase/10_LihatCaraPembayaran'), 0)
 
 Mobile.closeApplication()
 

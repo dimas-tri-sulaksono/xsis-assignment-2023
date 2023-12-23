@@ -19,19 +19,45 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication('com.tokopedia.tkpd', FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('tokopedia/loginByGoogleNewDevice/btnLewati'), 0)
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('tokopedia/loginByGoogleNewDevice/btnTutupPopUp'), 0)
+Mobile.tap(findTestObject('productPurchase/01_CariDiTokopedia'), 0)
 
-Mobile.tap(findTestObject('tokopedia/loginByGoogleNewDevice/btnBurger'), 0)
+Mobile.setText(findTestObject('productPurchase/02_CariDiTokopedia'), 'Oxihom FK9', 5)
 
-Mobile.tap(findTestObject('tokopedia/loginByGoogleNewDevice/btnMasukMenuUtama'), 0)
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
 
-Mobile.tap(findTestObject('tokopedia/loginByGoogleNewDevice/btnMetodeLain'), 0)
+Mobile.tap(findTestObject('productPurchase/03_SearchList'), 0)
 
-Mobile.tap(findTestObject('tokopedia/loginByGoogleNewDevice/btnGoogle'), 0)
+Mobile.tap(findTestObject('productPurchase/04_Product'), 0)
 
-Mobile.tap(findTestObject('tokopedia/loginByGoogleNewDevice/btnAkunLinear'), 0)
+Mobile.tap(findTestObject('productPurchase/05_BeliLangsung'), 0)
+
+Mobile.tap(findTestObject('productPurchase/06_BeliLangsung'), 0)
+
+Mobile.tap(findTestObject('productPurchase/07_UbahMetodeBayar'), 0)
+
+Mobile.tap(findTestObject('productPurchase/x_KembaliDariHalamanMetodeBayar'), 0)
+
+Mobile.tap(findTestObject('productPurchase/07_UbahMetodeBayar'), 0)
+
+Mobile.tap(findTestObject('productPurchase/08_Gopay'), 0)
+
+Mobile.delay(5, FailureHandling.STOP_ON_FAILURE)
+
+//Aquos SH-04L
+//Mobile.swipe(708, 2951, 708, 1988)
+//Samsung A52s
+Mobile.swipe(526, 2152, 526, 700)
+
+Mobile.tap(findTestObject('productPurchase/09_Bayar'), 0)
+
+Mobile.setEncryptedText(findTestObject('gopay/10_PinGopay'), 'aeHFOx8jV/A=', 0)
+
+Mobile.tap(findTestObject('gopay/11_ButtonKonfirmasi'), 0)
+
+//belum ada step untuk input pin gopay
+Mobile.tap(findTestObject('gopay/12_LihatDaftarTransaksi'), 0)
 
 Mobile.closeApplication()
 
