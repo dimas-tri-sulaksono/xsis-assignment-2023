@@ -17,21 +17,3 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.tokopedia.tkpd', FailureHandling.STOP_ON_FAILURE)
-
-Mobile.tap(findTestObject('loginByGoogleNewDevice/btnLewati'), 0)
-
-Mobile.tap(findTestObject('loginByGoogleNewDevice/btnTutupPopUp'), 0)
-
-Mobile.tap(findTestObject('loginByGoogleNewDevice/btnBurger'), 0)
-
-Mobile.tap(findTestObject('loginByGoogleNewDevice/btnMasukMenuUtama'), 0)
-
-Mobile.tap(findTestObject('loginByGoogleNewDevice/btnMetodeLain'), 0)
-
-Mobile.tap(findTestObject('loginByGoogleNewDevice/btnGoogle'), 0)
-
-Mobile.tap(findTestObject('loginByGoogleNewDevice/btnAkunLinear'), 0)
-
-Mobile.closeApplication()
-
